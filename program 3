@@ -1,0 +1,29 @@
+Program No.:3
+Aim:Write a program to split a string into array of characters.
+Software used:Collab (or) Jupyter Notebook
+Description:
+This simple Python program takes a string and converts it into a list of its individual characters. The string is stored in the variable my_string, and the list() function is used to split it into characters. 
+SOURCE CODE:
+my_string = "venky"
+char_list = list(my_string)
+print(char_list)
+PROCEDURE:
+1. Store the string "python" in a variable.
+2.Convert the string into a list of characters using list().
+ 3. Print the resulting list.
+
+EXPECTED OUTPUT:
+[ 'v', 'e', 'n', 'k', 'y']
+ACTUAL OUTPUT: 
+[ 'v', 'e', 'n', 'k', 'y']
+
+
+
+
+
+
+
+
+
+
+                                    Experiment 4
