@@ -1,0 +1,53 @@
+Program 5
+Aim:Write a Python program to get the largest number from a list.
+Software used:Collab (or) Jupyter Notebook
+Description:
+This program finds the largest number in a list by comparing each element. It starts with the first element as the largest and iterates through the list to update the maximum value.
+SOURCE CODE:
+defget_largest_number(numbers):
+if not numbers:
+return None
+largest = numbers[0]
+fornum in numbers[1:]:
+ifnum> largest:
+largest = num
+return largest
+
+my_list = [10, 45, 2, 99, 67, 88]
+largest_number = get_largest_number(my_list)
+print("The largest number is:", largest_number)
+
+PROCEDURE:
+1.	Define a function get_largest_number(numbers).
+2.	Initialize the first element as the largest.
+3.	Compare each element with the current largest.
+4.	Update if a larger value is found.
+5.	Return and print the largest number.
+
+
+INPUT:
+my_list = [10, 45, 2, 99, 67, 88]
+
+EXPECTED OUTPUT:
+The largest number is: 99
+
+ACTUAL OUTPUT:
+The largest number is: 99
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
