@@ -1,0 +1,74 @@
+Program :6
+Aim:Write a Python program that defines a Car class with attributes like make, model, and year, and methods like start() to start the car and stop() to stop it.
+Software used:Colab (or) Jupyter Notebook
+Description:
+This program defines a Car class with attributes such as make, model, and year. It provides methods to start and stop the car while keeping track of whether the car is currently running or not.
+
+SOURCE CODE:
+class Car:
+def __init__(self, make, model, year):
+self.make = make
+self.model = model
+self.year = year
+self.is_started = False
+
+def start(self):
+if not self.is_started:
+print(f"The {self.year} {self.make} {self.model} is starting.")
+self.is_started = True
+else:
+print(f"The {self.year} {self.make} {self.model} is already running.")
+
+def stop(self):
+ifself.is_started:
+print(f"The {self.year} {self.make} {self.model} is stopping.")
+self.is_started = False
+else:
+print(f"The {self.year} {self.make} {self.model} is already stopped.")
+
+# Demonstrating the Car class
+print("--- Car Class Demonstration ---")
+my_car = Car("Toyota", "Camry", 2022)
+print(f"My car: {my_car.make} {my_car.model} ({my_car.year})")
+
+my_car.start()
+my_car.start()
+my_car.stop()
+my_car.stop()
+
+
+PROCEDURE:
+1.	Define a class Car with attributes make, model, year, and state (running or stopped).
+2.	Implement the method start() to start the car.
+3.	Implement the method stop() to stop the car.
+4.	Create an object of the Car class and demonstrate its methods.
+
+
+INPUT:
+Car("Toyota", "Camry", 2022)
+
+EXPECTED OUTPUT:
+--- Car Class Demonstration ---
+My car: Toyota Camry (2022)
+The 2022 Toyota Camry is starting.
+The 2022 Toyota Camry is already running.
+The 2022 Toyota Camry is stopping.
+The 2022 Toyota Camry is already stopped.
+
+ACTUAL OUTPUT:
+--- Car Class Demonstration ---
+My car: Toyota Camry (2022)
+The 2022 Toyota Camry is starting.
+The 2022 Toyota Camry is already running.
+The 2022 Toyota Camry is stopping.
+The 2022 Toyota Camry is already stopped.
+
+
+
+
+
+
+
+
+
+
