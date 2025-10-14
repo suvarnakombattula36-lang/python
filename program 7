@@ -1,0 +1,58 @@
+                                  Experiment 7
+Program :7
+Aim:Write a Python program that demonstrates inheritance by creating a base class Animal and derived classes like Dog and Cat with specific behaviors.
+Software used:Colab (or) Jupyter Notebook
+Description:
+This program demonstrates inheritance in Python. A base class Animal is created with common behaviors (eat, sleep). Derived classes Dog and Cat extend the base class and include their own specific methods (bark, meow).
+
+SOURCE CODE:
+class Animal:
+def __init__(self, name):
+        self.name = name
+
+def eat(self):
+print(f"{self.name} is eating.")
+
+def sleep(self):
+print(f"{self.name} is sleeping.")
+
+class Dog(Animal):
+def bark(self):
+print(f"{self.name} says Woof!")
+
+class Cat(Animal):
+def meow(self):
+print(f"{self.name} says Meow!")
+
+dog1 = Dog("Buddy")
+cat1 = Cat("Whiskers")
+
+dog1.eat()
+dog1.sleep()
+cat1.eat()
+cat1.sleep()
+
+dog1.bark()
+cat1.meow()
+PROCEDURE:
+1.	Define base class Animal with methods eat() and sleep().
+2.	Define derived class Dog with method bark().
+3.	Define derived class Cat with method meow().
+4.	Create objects and demonstrate inheritance.
+INPUT:
+Dog("Buddy"), Cat("Whiskers")
+
+EXPECTED OUTPUT:
+Buddy is eating.
+Buddy is sleeping.
+Whiskers is eating.
+Whiskers is sleeping.
+Buddy says Woof!
+Whiskers says Meow!
+ACTUAL OUTPUT:
+Buddy is eating.
+Buddy is sleeping.
+Whiskers is eating.
+Whiskers is sleeping.
+Buddy says Woof!
+Whiskers says Meow!
