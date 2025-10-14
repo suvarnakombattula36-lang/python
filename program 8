@@ -1,0 +1,49 @@
+Program 8
+Aim:Write a Python program that demonstrates error handling using the try-except block to handle division by zero.
+Software used:Colab (or) Jupyter Notebook
+Description:
+This program demonstrates exception handling in Python. It performs division safely by catching errors like division by zero and invalid data types using try-except blocks.
+
+SOURCE CODE:
+defsafe_divide(numerator, denominator):
+try:
+result = numerator / denominator
+print(f"The result of {numerator} / {denominator} is: {result}")
+exceptZeroDivisionError:
+print(f"Error: Cannot divide by zero! Attempted {numerator} / {denominator}")
+exceptTypeError:
+print("Error: Invalid input types. Please provide numbers.")
+
+print("--- Error Handling Demonstration ---")
+safe_divide(10, 2)
+safe_divide(10, 0)
+safe_divide(5, "abc")
+PROCEDURE:
+1.	Define a function safe_divide() with try-except.
+2.	Attempt to divide two numbers.
+3.	Catch ZeroDivisionError if denominator is zero.
+4.	Catch TypeError if inputs are invalid.
+5.	Print results or error messages.
+
+INPUT:
+safe_divide(10, 2)
+safe_divide(10, 0)
+safe_divide(5, "abc")
+
+EXPECTED OUTPUT:
+The result of 10 / 2 is: 5.0
+Error: Cannot divide by zero! Attempted 10 / 0
+Error: Invalid input types. Please provide numbers.
+
+ACTUAL OUTPUT:
+The result of 10 / 2 is: 5.0
+Error: Cannot divide by zero! Attempted 10 / 0
+Error: Invalid input types. Please provide numbers.
+
+
+
+
+
+
+
+
