@@ -1,0 +1,48 @@
+Program No.:1
+Aim:Convert kilograms to pounds.
+Software used:Collab (or) Jupiter note book.
+Description: 
+This program converts a user-entered weight from kilograms to pounds. The program multiplies the weight in kilograms by 2.20462 (the standard conversion factor from kg to lbs). It prints the converted weight in pounds, formatted to two decimal places. If the user enters a non numeric value, a Value Error is caught, and a friendly error message is displayed.
+
+SOURCE CODE:
+defkg_to_pounds():
+""" 
+Converts a weight entered in kilograms to pounds.
+ """
+try:
+kilograms = float(input("Enter the weight in kilograms: ")) 
+pounds = kilograms * 2.20462
+print(f"The weight in pounds is: {pounds:.2f}") 
+exceptValueError:
+print("Invalid input. Please enter a numerical value for weight.") 
+# Call the function directly to run the conversion 
+kg_to_pounds()
+
+PROCEDURE:
+1. Prompt the user to enter weight in kilograms.
+ 2. Convert the input to float and multiply by 2.20462 to get pounds.
+
+
+ 3. Print the result rounded to two decimal places.
+ 4. If input is invalid, display an error message.
+
+
+INPUT:
+Enter the weight in kilograms: 12
+
+EXPECTED OUTPUT:
+The weight in pounds is: 26.46
+
+ACTUAL OUTPUT:
+The weight in pounds is: 26.46
+
+    
+
+
+
+
+
+
+
+
+
